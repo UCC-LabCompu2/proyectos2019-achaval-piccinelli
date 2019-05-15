@@ -1,0 +1,26 @@
+
+
+h1 {                /*Cabecera, pertenece al div principal*/
+    color: #192cff;
+    background: #000016;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+body{       /*dentro del body tendremos 2 divs, 1 para el texto
+            a la izquierda dando informacion y otro a la
+            derecha para las imagenes(la profe nos recomendo
+            usar transformacion con el tag hover
+            tambien debemos ubicar los divs con ubicacion)*/
+    background: linear-gradient(to right, #f4ffec, #000016);
+    text-align: left;
+    font-family: "Arial Black";
+}
+div{
+    border: 2px solid #101cff;
+    margin: 10px;
+    padding: 5px 30px;
+}
+img{
+    width: 80px;
+}
