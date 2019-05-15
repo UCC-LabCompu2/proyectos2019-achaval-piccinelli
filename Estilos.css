@@ -5,21 +5,40 @@ h1 {                /*Cabecera, pertenece al div principal*/
     background: #000016;
     text-align: center;
     text-transform:uppercase;
+    height: 50px;
 }
 
 body{       /*dentro del body tendremos 2 divs, 1 para el texto
             a la izquierda dando informacion y otro a la
             derecha para las imagenes(la profe nos recomendo
             usar transformacion con el tag hover
-            tambien debemos ubicar los divs con ubicacion)*/
+            tambien debemos ubicar los divs con ubicacion )*/
     background: linear-gradient(to right, #f4ffec, #000016);
     text-align: left;
     font-family: "Arial Black";
 }
-div{
-    border: 2px solid #101cff;
-    margin: 10px;
-    padding: 5px 30px;
+.info{
+
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+    background-color: #9aace8;
+    border: 2px solid #4657af;
+
+    width: 15%;
+    height: 100%;
+}
+
+.relleno{
+    position: fixed;
+    left: 17%;
+    width:100px;
+
+    background:red;
+
+    /*top: 80px;*/
+    top: 10%;
+    height: 1500px;
 }
 img{
     width: 80px;
