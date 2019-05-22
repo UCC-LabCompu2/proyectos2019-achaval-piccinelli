@@ -1,11 +1,18 @@
 
 
 h1 {                /*Cabecera, pertenece al div principal*/
-    color: #192cff;
+    color: #2464ff;
     background: #000016;
     text-align: center;
     text-transform:uppercase;
     height: 50px;
+}
+h2 {                /*Utilizado para boton de contacto*/
+    color: #2464ff;
+    text-align: right;
+    text-transform:uppercase;
+    height: 35px;
+
 }
 
 body{       /*dentro del body tendremos 2 divs, 1 para el texto
@@ -31,15 +38,15 @@ body{       /*dentro del body tendremos 2 divs, 1 para el texto
 
 .relleno{
     position: fixed;
-    left: 17%;
-    width:100px;
+    left: 25%;
+    width:1000px;
 
-    background:red;
+    background:;
 
     /*top: 80px;*/
     top: 10%;
     height: 1500px;
 }
 img{
-    width: 80px;
+    max-width: 1000px;
 }
