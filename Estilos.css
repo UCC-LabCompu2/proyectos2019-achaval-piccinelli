@@ -1,13 +1,16 @@
 
 
-h1 {                /*Cabecera, pertenece al div principal*/
+h1
+{                /*Cabecera, pertenece al div principal*/
     color: #2464ff;
     background: #000016;
     text-align: center;
     text-transform:uppercase;
     height: 50px;
 }
-h2 {                /*Utilizado para boton de contacto*/
+
+h2
+{                /*Utilizado para boton de contacto*/
     color: #2464ff;
     text-align: right;
     text-transform:uppercase;
@@ -15,7 +18,15 @@ h2 {                /*Utilizado para boton de contacto*/
 
 }
 
-body{       /*dentro del body tendremos 2 divs, 1 para el texto
+h3
+{                /*Utilizado para texto*/
+    color: #2464ff;
+    text-align: justify;
+    text-transform: none;
+}
+
+body
+{       /*dentro del body tendremos 2 divs, 1 para el texto
             a la izquierda dando informacion y otro a la
             derecha para las imagenes(la profe nos recomendo
             usar transformacion con el tag hover
@@ -24,29 +35,46 @@ body{       /*dentro del body tendremos 2 divs, 1 para el texto
     text-align: left;
     font-family: "Arial Black";
 }
-.info{
 
+.info  /* Utilizado para la tabla con el índice a la izquierda */
+{
     position: sticky;
     top: 0px;
     padding: 5px;
     background-color: #9aace8;
     border: 2px solid #4657af;
-
     width: 15%;
-    height: 100%;
+    height: available;
 }
 
-.relleno{
+
+.relleno  /*Imagenes centradas en la pag ppal */
+{
     position: fixed;
     left: 25%;
     width:1000px;
-
-    background:;
-
-    /*top: 80px;*/
     top: 10%;
-    height: 1500px;
+    height: available;
 }
-img{
-    max-width: 1000px;
+
+.poll
+{
+    position: fixed;
+    left: 25%;
+    top: 15%;
+    height: available;
 }
+
+.auxpoll
+{
+    position: fixed;
+    left: 60%;
+    top: 15%;
+    height: available;
+}
+
+img
+{
+    margin-left: 40px;
+}
+

@@ -2,28 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Estudio ARQ</title>
     <link rel="stylesheet" href="Estilos.css" type="text/css">
+    <script>
+        function checkgarage(){
+            var el = document.getElementById("Garage");
+            var mos = document.getElementById("Mostrado");
+            mos.style
+            if(el.checked ){
+                mos.style.display = "block";
+            }else{
+                mos.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
 
 <header>
-    <h1><a href="">Estudio de arquitectura - Estudio MAS</a></h1>
+    <h1><a href="index.html">Estudio de arquitectura - Estudio MAS</a></h1>
     <h2><a href="">Contacto</a></h2>
 </header>
 
 <div class="info"> <!--Tabla izquierda, para botones-->
-    <a href="Info.html"><img src="Imagenes/button1.png" height="60px" width="200px" hspace="40px"></a><br> <!--1er boton, lleva a texto y fotos-->
-    <img src="Imagenes/button2.1.png" height="60px" width="200px" hspace="40px"><br> <!--2do boton, lleva a un cuestionario-->
-    <a href="Graphic.html"><img src="Imagenes/button3.png" height="60px" width="200px" hspace="40px"></a><br> <!--3er boton, lleva al grafico-->
-    <a href="BaseWebPage.html"><img src="Imagenes/button4.png" height="60px" width="200px" hspace="40px"></a><br> <!--4to boton, lleva al inicio-->
+    <img src="Imagenes/button2.1.png" width="70%"><br> <!--2do boton, lleva a un cuestionario-->
+    <a href="Graphic.html"><img src="Imagenes/button3.png" width="70%"></a><br> <!--3er boton, lleva al grafico-->
+    <a href="index.html"><img src="Imagenes/button4.png" width="70%"></a><br> <!--4to boton, lleva al inicio-->
 </div>
 
-<div class="relleno"> <!--Centro de pantalla, para las preguntas-->
+<div class="poll"> <!--Centro de pantalla, para las preguntas-->
 
+    <h3>¿Cantidad de habitaciones?</h3>
+    <input type="radio" name="bedroom" value="1" checked> 1 habitación<br>
+    <input type="radio" name="bedroom" value="2">         2 habitaciónes<br>
+    <input type="radio" name="bedroom" value="3">         3 habitaciónes<br>
+    <input type="radio" name="bedroom" value="4">         4 o más<br>
+
+    <h3>¿Cantidad de baños?</h3>
+    <input type="radio" name="bathroom" value="1" checked> 1 baño<br>
+    <input type="radio" name="bathroom" value="2">         2 baños<br>
+    <input type="radio" name="bathroom" value="3">         3 baños<br>
+    <input type="radio" name="bathroom" value="4">         4 o más baños<br>
+
+    <h3>¿Con cochera?</h3>
+    <input id="Garage" type="radio" name="garage" value="yes" checked onclick="checkgarage()"> Si<br>
+    <input type="radio" name="garage" value="no" onclick="checkgarage()">                      No<br>
+
+    <div class="auxpoll" id="Mostrado">
+        <h3>¿Para cuantos autos?</h3>
+        <input type="radio" name="CarAmount" value="1" checked> 1 auto<br>
+        <input type="radio" name="CarAmount" value="2">         2 autos<br>
+        <input type="radio" name="CarAmount" value="3">         3 o más<br>
+
+        <h5>Email: </h5> <input type="email" name="email" > <br>
+        <a href="Poll.html"><button type="button"> Enviar </button></a>
+        <!--Solo recarga la página, la funcionalidad es confirmar el envio de la información a una base de datos-->
+    </div>
+
+    <h3>¿Con patio?</h3> <!--Playground o Backyard -->
+    <input type="radio" name="Backyard" value="yes" checked> Si Frontal<br>
+    <input type="radio" name="Backyard" value="no">          No Frontal<br>
+    <input type="radio" name="Backyard" value="yes" checked>   Si Trasero<br>
+    <input type="radio" name="Backyard" value="no">            No Trasero<br>
 
 </div>
 
+
+
+</body>
+</html>
 
 
 
