@@ -78,3 +78,13 @@ img
     margin-left: 40px;
 }
 
+#graf
+{
+    background-color: #8b6c87;
+}
+
+section{
+    width: 1000px;
+    position: relative;
+    margin: auto;
+}
